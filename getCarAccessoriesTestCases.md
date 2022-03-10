@@ -2,10 +2,10 @@
 
 **getCarAccessories(id)**
 
-Returns an array of car accessories. 
+Returns an array of car accessories.
 
 ```json
-["clock","speedometer"]
+["clock", "speedometer"]
 ```
 
 If none found, returns an empty array.
@@ -14,32 +14,32 @@ If none found, returns an empty array.
 []
 ```
 
-Parameters: id of the car 
+Parameters: id of the car
 
 Return: returns accessories as an array
+
+Before tests create `register` -object from the `CarStorage` class with the default data
 
 ### Test 1: Returns an array of car accessories
 
 ```js
-register.getCarAccessories(2)
+register.getCarAccessories(2);
 ```
 
-Returns: 
+Returns:
 
 ```json
-["clock","speedometer"]
+["clock", "speedometer"]
 ```
 
 ### Test 2: If no accessories found returns an empty array
 
 ```js
-register.getCarAccessories(3)
+register.getCarAccessories(3);
 ```
 
-Returns: 
+Returns:
 
 ```json
 []
 ```
-
-

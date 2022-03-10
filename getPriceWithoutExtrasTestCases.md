@@ -1,7 +1,7 @@
 ## Test Cases
 
 **getPriceWithoutExtras(id)**
-    
+
 Returns the price with out extras
 
 - Parameters: id of the car
@@ -10,13 +10,16 @@ Returns the price with out extras
 
 - if no car with the given number is found throws an exeption `nothing found with given id`
 
+Before tests create `register` -object from the `CarStorage` class with the default data
+
 ### Test 1: get price with parameter 1
 
 ```js
-register.getPriceWithoutExtras(1)
+register.getPriceWithoutExtras(1);
 ```
 
 returns
+
 ```json
 250000
 ```
@@ -24,10 +27,11 @@ returns
 ### Test 2: no car found with given parameter
 
 ```js
-register.getPriceWithoutExtras(150)
+register.getPriceWithoutExtras(150);
 ```
 
 returns
+
 ```json
 throws `"nothing found with given id"`
 ```

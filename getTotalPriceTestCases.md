@@ -4,19 +4,22 @@
 
 Returns the total price of the car including the total price of the extras
 
-  - Parameters: id of the car
+- Parameters: id of the car
 
-  - Return: The price of the car including the total price of the extras
+- Return: The price of the car including the total price of the extras
 
-  - if no car with the given number is found throws an exeption `nothing found with given id`
+- if no car with the given number is found throws an exeption `nothing found with given id`
+
+Before tests create `register` -object from the `CarStorage` class with the default data
 
 ### Test 1: get price with parameter 1
 
 ```js
-register.getTotalPrice(1)
+register.getTotalPrice(1);
 ```
 
 returns
+
 ```json
 252500
 ```
@@ -24,10 +27,11 @@ returns
 ### Test 2: no car found with given parameter
 
 ```js
-register.getTotalPrice(150)
+register.getTotalPrice(150);
 ```
 
 returns
+
 ```json
 throws `"nothing found with given id"`
 ```
